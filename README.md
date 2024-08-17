@@ -1,4 +1,4 @@
-# Discord Css theme (ft Arch)
+# NeonCord Css theme (ft Arch)
 
 ## Overview
 
