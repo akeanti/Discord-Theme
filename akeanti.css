@@ -1,0 +1,174 @@
+/* Import external CSS for additional styles */
+@import url("https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css");
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+
+/* Custom Properties */
+:root {
+  --background-image: url('https://www.pixel4k.com/wp-content/uploads/2018/11/anime-girl-aqua-blue-4k_1541973948.jpg.webp');
+  --background-image-blur: 6px;
+  --background-image-size: cover;
+  --background-image-position: center center;
+  --popout-modal-image: url('https://www.pixel4k.com/wp-content/uploads/2018/11/anime-girl-aqua-blue-4k_1541973948.jpg.webp');
+  --popout-modal-blur: 8px;
+  --popout-modal-size: cover;
+  --popout-modal-position: center center;
+  --home-button-image: url('https://www.pixel4k.com/wp-content/uploads/2018/11/anime-girl-aqua-blue-4k_1541973948.jpg.webp');
+  --home-button-size: cover;
+  --home-button-position: center center;
+  --serverlist-brightness: 0.5;
+  --left-brightness: 0.5;
+  --middle-brightness: 0.4;
+  --right-brightness: 0.3;
+  --popout-modal-brightness: 0.6;
+  --gradient-primary: 0, 255, 255, 0.7;
+  --gradient-secondary: 0, 191, 255, 0.5;
+  --scrollbar-colour: rgba(0, 255, 255, 0.1);
+  --link-colour: #00ffff;
+  --gradient-direction: 120deg;
+  --tint-colour: 0, 191, 255;
+  --tint-brightness: 0.3;
+  --font: 'Whitney', sans-serif;
+  --window-padding: 10px;
+  --window-roundness: 15px;
+  --show-gift-gif-buttons: none;
+  --update-notice-1: none;
+  --HSL-server-icon-size: 50px;
+  --HSL-server-spacing: 20px;
+  --rs-small-spacing: 2px;
+  --rs-large-spacing: 5px;
+  --rs-width: 4px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-invisible-color: #747f8d;
+  --folder-icon-size: 32px;
+  --folder-icon-border: 2px solid rgba(0, 255, 255, 0.5);
+  --folder-icon-radius: 10px;
+}
+
+/* Global Styles */
+body {
+  background: var(--background-image) no-repeat center center fixed;
+  background-size: var(--background-image-size);
+  background-position: var(--background-image-position);
+  backdrop-filter: blur(var(--background-image-blur));
+  color: #e0e0e0;
+  font-family: var(--font);
+}
+
+/* Sidebar */
+.sidebar-2K8pFv {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(12px);
+  border-radius: var(--window-roundness);
+}
+
+/* Channel List */
+.channelList-3fXTcI {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-radius: var(--window-roundness);
+}
+
+/* Custom Folder Icons */
+.folder-2YPmcs::before {
+  content: url('https://your-image-url.com/folder-icon.png');
+  width: var(--folder-icon-size);
+  height: var(--folder-icon-size);
+  border: var(--folder-icon-border);
+  border-radius: var(--folder-icon-radius);
+}
+
+/* Chat Area */
+.messages-2CnqY9 {
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #e0e0e0 !important;
+  border-radius: var(--window-roundness);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Text Input Area */
+.textArea-1Mkd7R {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #e0e0e0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: var(--window-roundness);
+}
+
+/* Message Bubbles */
+.message-2Q7pK2 {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border-radius: 20px;
+  padding: 12px;
+  margin: 6px 0;
+  color: #e0e0e0 !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.header-2fXq6g {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #e0e0e0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Buttons */
+.button-2pP0gY {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: #e0e0e0 !important;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.button-2pP0gY:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 3px 6px rgba(0, 255, 255, 0.5);
+}
+
+/* Profile Panel */
+.userProfile-2dW9Gr {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #e0e0e0 !important;
+  border-radius: var(--window-roundness);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-colour);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 255, 0.4);
+}
+
+/* Folder Styles */
+.folder-2YPmcs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: var(--folder-icon-radius);
+  padding: 5px;
+}
+
+/* Additional Hover Effects */
+.folder-2YPmcs:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 255, 255, 0.5);
+}
